@@ -1,0 +1,10 @@
+1604358902064	geckodriver	INFO	Listening on 127.0.0.1:54793
+1604358905196	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ALANAK~1\\AppData\\Local\\Temp\\rust_mozprofilegJw2GT"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1604358911669	Marionette	INFO	Listening on port 54803
+1604358912028	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604359576465	Marionette	INFO	Stopped listening on port 54803
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

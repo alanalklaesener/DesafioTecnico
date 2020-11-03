@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201102 22:47:09.252" rpa="false">
+<suite id="s1" name="TestSitePractice" source="C:\SuiteSiteTestePractice\tests\TestSitePractice.robot">
+<test id="s1-t1" name="Caso de teste 01: Consultar produtos no site">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:09.725" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20201102 22:47:09.741" level="INFO">Firefox driver log is always forced to to: C:\SuiteSiteTestePractice\results\geckodriver-98.log</msg>
+<status status="PASS" starttime="20201102 22:47:09.725" endtime="20201102 22:47:20.054"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:09.724" endtime="20201102 22:47:20.054"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20201102 22:47:20.058" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20201102 22:47:20.057" endtime="20201102 22:47:25.120"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20201102 22:47:25.141" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201102 22:47:25.120" endtime="20201102 22:47:25.141"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:20.056" endtime="20201102 22:47:25.141"></status>
+</kw>
+<kw name="Digitar o nome do produto &quot;Blouse&quot; no campo de pesquisa" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=search_query</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:25.149" level="INFO">Typing text 'Blouse' into text field 'name=search_query'.</msg>
+<status status="PASS" starttime="20201102 22:47:25.145" endtime="20201102 22:47:25.305"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:25.144" endtime="20201102 22:47:25.306"></status>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=submit_search</arg>
+</arguments>
+<msg timestamp="20201102 22:47:25.310" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20201102 22:47:25.309" endtime="20201102 22:47:26.946"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:25.308" endtime="20201102 22:47:26.947"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20201102 22:47:26.949" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20201102 22:47:26.949" endtime="20201102 22:47:28.842"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20201102 22:47:28.849" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201102 22:47:28.842" endtime="20201102 22:47:28.849"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:26.948" endtime="20201102 22:47:28.850"></status>
+</kw>
+<kw name="Digitar o nome do produto &quot;produtoNãoExistente&quot; no campo de pesquisa" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=search_query</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:28.853" level="INFO">Typing text 'produtoNãoExistente' into text field 'name=search_query'.</msg>
+<status status="PASS" starttime="20201102 22:47:28.852" endtime="20201102 22:47:28.963"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:28.851" endtime="20201102 22:47:28.963"></status>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=submit_search</arg>
+</arguments>
+<msg timestamp="20201102 22:47:28.965" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20201102 22:47:28.965" endtime="20201102 22:47:30.098"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:28.964" endtime="20201102 22:47:30.099"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20201102 22:47:30.108" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20201102 22:47:30.107" endtime="20201102 22:47:32.013"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20201102 22:47:32.022" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201102 22:47:32.013" endtime="20201102 22:47:32.022"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:30.105" endtime="20201102 22:47:32.023"></status>
+</kw>
+<kw name="Digitar o nome do produto &quot;Blouse&quot; no campo de pesquisa" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=search_query</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:32.028" level="INFO">Typing text 'Blouse' into text field 'name=search_query'.</msg>
+<status status="PASS" starttime="20201102 22:47:32.027" endtime="20201102 22:47:32.146"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:32.026" endtime="20201102 22:47:32.147"></status>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=submit_search</arg>
+</arguments>
+<msg timestamp="20201102 22:47:32.149" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20201102 22:47:32.148" endtime="20201102 22:47:33.606"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:32.148" endtime="20201102 22:47:33.606"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20201102 22:47:33.610" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20201102 22:47:33.610" endtime="20201102 22:47:35.399"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20201102 22:47:35.419" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201102 22:47:35.400" endtime="20201102 22:47:35.420"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:33.609" endtime="20201102 22:47:35.421"></status>
+</kw>
+<kw name="Digitar o nome do produto &quot;Dresses&quot; no campo de pesquisa" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=search_query</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:35.426" level="INFO">Typing text 'Dresses' into text field 'name=search_query'.</msg>
+<status status="PASS" starttime="20201102 22:47:35.425" endtime="20201102 22:47:35.556"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:35.424" endtime="20201102 22:47:35.558"></status>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=submit_search</arg>
+</arguments>
+<msg timestamp="20201102 22:47:35.562" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20201102 22:47:35.561" endtime="20201102 22:47:37.017"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:35.558" endtime="20201102 22:47:37.017"></status>
+</kw>
+<kw name="Clicar no botão Grid" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=grid</arg>
+</arguments>
+<msg timestamp="20201102 22:47:37.019" level="INFO">Clicking element 'id=grid'.</msg>
+<status status="PASS" starttime="20201102 22:47:37.019" endtime="20201102 22:47:37.319"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:37.019" endtime="20201102 22:47:37.319"></status>
+</kw>
+<kw name="Clicar no botão List" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=list</arg>
+</arguments>
+<msg timestamp="20201102 22:47:37.321" level="INFO">Clicking element 'id=list'.</msg>
+<status status="PASS" starttime="20201102 22:47:37.321" endtime="20201102 22:47:37.599"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:37.321" endtime="20201102 22:47:37.600"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20201102 22:47:37.605" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20201102 22:47:37.604" endtime="20201102 22:47:39.478"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20201102 22:47:39.489" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201102 22:47:39.478" endtime="20201102 22:47:39.489"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:37.602" endtime="20201102 22:47:39.489"></status>
+</kw>
+<kw name="Digitar o nome do produto &quot;Dresses&quot; no campo de pesquisa" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=search_query</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:39.495" level="INFO">Typing text 'Dresses' into text field 'name=search_query'.</msg>
+<status status="PASS" starttime="20201102 22:47:39.494" endtime="20201102 22:47:39.589"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:39.493" endtime="20201102 22:47:39.589"></status>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=submit_search</arg>
+</arguments>
+<msg timestamp="20201102 22:47:39.594" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20201102 22:47:39.594" endtime="20201102 22:47:40.908"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:39.593" endtime="20201102 22:47:40.908"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201102 22:47:40.911" endtime="20201102 22:47:42.222"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:40.911" endtime="20201102 22:47:42.222"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:09.723" endtime="20201102 22:47:42.223" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Caso de teste 02: Utilizar o carrinho de compras para adicionar e remover produtos">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:42.227" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20201102 22:47:42.235" level="INFO">Firefox driver log is always forced to to: C:\SuiteSiteTestePractice\results\geckodriver-99.log</msg>
+<status status="PASS" starttime="20201102 22:47:42.227" endtime="20201102 22:47:49.710"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:42.226" endtime="20201102 22:47:49.710"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20201102 22:47:49.713" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20201102 22:47:49.712" endtime="20201102 22:47:54.106"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20201102 22:47:54.133" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201102 22:47:54.106" endtime="20201102 22:47:54.133"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:49.712" endtime="20201102 22:47:54.133"></status>
+</kw>
+<kw name="Acessar o carrinho de compras" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com/index.php?controller=order</arg>
+</arguments>
+<msg timestamp="20201102 22:47:54.136" level="INFO">Opening url 'http://automationpractice.com/index.php?controller=order'</msg>
+<status status="PASS" starttime="20201102 22:47:54.135" endtime="20201102 22:47:55.481"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:54.134" endtime="20201102 22:47:55.481"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20201102 22:47:55.483" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20201102 22:47:55.483" endtime="20201102 22:47:57.385"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20201102 22:47:57.411" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201102 22:47:57.385" endtime="20201102 22:47:57.411"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:55.482" endtime="20201102 22:47:57.412"></status>
+</kw>
+<kw name="Digitar o nome do produto &quot;Blouse&quot; no campo de pesquisa" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=search_query</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20201102 22:47:57.415" level="INFO">Typing text 'Blouse' into text field 'name=search_query'.</msg>
+<status status="PASS" starttime="20201102 22:47:57.414" endtime="20201102 22:47:57.513"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:57.413" endtime="20201102 22:47:57.513"></status>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=submit_search</arg>
+</arguments>
+<msg timestamp="20201102 22:47:57.517" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20201102 22:47:57.516" endtime="20201102 22:47:58.965"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:57.515" endtime="20201102 22:47:58.966"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201102 22:47:58.969" endtime="20201102 22:48:00.182"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:58.967" endtime="20201102 22:48:00.182"></status>
+</kw>
+<status status="PASS" starttime="20201102 22:47:42.225" endtime="20201102 22:48:00.183" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201102 22:47:09.268" endtime="20201102 22:48:00.189"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="TestSitePractice">TestSitePractice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
